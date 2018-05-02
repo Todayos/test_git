@@ -15,7 +15,7 @@ def have_arg(arg):
 
 @have_arg('good')
 def func1():
-    print('天气好')
+    print('天气非常好')
 
 
 @have_arg('bad')
