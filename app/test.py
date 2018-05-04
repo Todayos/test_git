@@ -85,7 +85,10 @@ import _thread
 # print("退出主线程")
 
 # 字典中的常用方法测试
-# dic = {"name": "chenqiong", "age": 18, "univ": "anli", "sex": "man"}
+# 字典反转
+dic = {"name": "chenqiong", "age": 18, "univ": "anli", "sex": "man"}
+dic3 = dict([(v, k) for k, v in dic.items()])
+print(dic3)
 # dic1 = {"name": "wangzedong", "age": 18, "univ": "anli"}
 # # 遍历字典key，value
 # for key, value in dic.items():
@@ -121,26 +124,32 @@ import _thread
 # dic2.clear()
 # print(dic2)
 
-# 元组
-tuple1 = ("s", "m")
-# 遍历数组
-for i in tuple1:
-    print(str(i), end=' ')
-# 换行
-print()
-# 打印第1个元组元素
-print(tuple1[0])
-# 查看元组长度
-print(len(tuple1))
-# 输出元组的最大值
-print(max(tuple1))
-# 输出元组的最小值
-print(min(tuple1))
-# 输出元组中的1出现的次数
-print(tuple1.count("s"))
-# 输出元组中的1的索引
-print(tuple1.index("s"))  # 返回的是第一次出现的位置
-
+# # 元组
+# tuple1 = ("s", "m")
+# # 遍历数组
+# for i in tuple1:
+#     print(str(i), end=' ')
+# # 换行
+# print()
+# # 打印第1个元组元素
+# print(tuple1[0])
+# # 查看元组长度
+# print(len(tuple1))
+# # 输出元组的最大值
+# print(max(tuple1))
+# # 输出元组的最小值
+# print(min(tuple1))
+# # 输出元组中的1出现的次数
+# print(tuple1.count("s"))
+# # 输出元组中的1的索引
+# print(tuple1.index("s"))  # 返回的是第一次出现的位置
+# lis = [1, 2]
+# tuple2 = (lis, "d", "f")
+# print(tuple2)
+# print(id(tuple2))
+# lis.append(3)
+# print(lis)
+# print(tuple2)
+# print(id(tuple2))
 # list 的用法
-lis = [1, 2, 3, 4]
-
+# lis = [1, 2, 3, 4]
